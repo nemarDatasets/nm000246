@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000246-blue)](https://doi.org/10.82901/nemar.nm000246)
+
 # Multi-day MI-BCI dataset (WBCIC-SHU) from Yang et al 2025
 
 Multi-day MI-BCI dataset (WBCIC-SHU) from Yang et al 2025.
