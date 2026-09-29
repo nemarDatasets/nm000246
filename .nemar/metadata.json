@@ -1,6 +1,11 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
+  "title": "Multi-day MI-BCI dataset (WBCIC-SHU) from Yang et al 2025",
+  "description": "A multi-day motor imagery brain-computer interface EEG dataset recorded from 51 healthy, BCI-naive participants over three sessions on different days. Participants performed left-hand and right-hand motor imagery (2-class, 51 subjects), and a subset of 11 subjects also performed a 3-class paradigm that added foot-hooking. Recordings used 59 EEG channels plus ECG and EOG at 1000 Hz. The data are provided in BIDS format with HED event annotations and benchmark classification results (CSP, FBCSP, EEGNet, deepConvNet, FBCNet).",
+  "methods_description": "EEG was recorded with a Neuracle NeuSen W system (59 EEG channels, Ag/AgCl sensors, plus ECG and EOG channels) at 1000 Hz. Each trial used a video cue of 1.5 s followed by 4 s of motor imagery, without feedback (offline). Each subject completed 3 sessions on different days, with 200 trials per session for the 2-class task and 300 trials for the 3-class task.",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "Banghua Yang": {},
     "Fenqi Rong": {},
@@ -11,6 +16,29 @@
     "Guangming Shi": {},
     "Xiaorong Gao": {}
   },
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "multi-day recording"
+    },
+    {
+      "term": "left/right hand imagery"
+    },
+    {
+      "term": "BCI benchmark"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.1038/s41597-025-04826-y",
@@ -23,11 +51,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000246",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
       "relation_type": "References"
@@ -36,18 +59,20 @@
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000246",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "title": "Multi-day MI-BCI dataset (WBCIC-SHU) from Yang et al 2025",
-  "license": "CC-BY-4.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "62.7 GB (154 files)"
+    "58.42 GB (154 files)"
   ],
   "formats": [
     ".bdf",
@@ -56,39 +81,6 @@
     ".tsv",
     ".yaml",
     ".yml"
-  ],
-  "description": "A multi-day motor imagery brain-computer interface dataset comprising EEG recordings from 51 healthy participants across 3 sessions. The dataset includes 2-class (left/right hand imagery) and 3-class (left hand, right hand, foot) motor imagery tasks with standardized visual and auditory cues. This high-quality dataset contains 39,600 trials acquired at 1000 Hz using 59 EEG channels and is designed for benchmarking BCI classification algorithms.",
-  "methods_description": "EEG data were acquired using a Neuracle NeuSen W system at 1000 Hz sampling rate with 59 EEG channels arranged in the standard 10-05 montage, plus ECG and EOG channels. Participants performed motor imagery tasks cued by visual and auditory stimuli with 1.5 s cue duration followed by 4.0 s imagery period. Data were collected across 3 sessions per subject on different days. Online bandpass filtering (0.5-40 Hz) and 50 Hz line frequency notch filtering were applied during acquisition.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "motor imagery"
-    },
-    {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "motor control"
-    },
-    {
-      "term": "classification algorithms"
-    },
-    {
-      "term": "common spatial patterns"
-    },
-    {
-      "term": "deep learning"
-    },
-    {
-      "term": "signal processing"
-    },
-    {
-      "term": "feature extraction"
-    }
   ],
   "source_hash": "7a653e843645ab938666832ae8fe8ef30465f1f1b9e1ad0a4b9c70e5e06ec25a"
 }
